@@ -1,0 +1,15 @@
+---
+- name: Install IIS-Server and FTP
+  hosts: Server_2019
+  gather_facts: no 
+  
+  tasks:
+    - name: Install IIS 
+      ansible.windows.win_feature:
+        name: Web-Server
+        state: present
+
+    - name: Install FTP
+      ansible.windows.win_powershell:
+        script: |
+          Install-WindowsFeature -Name Web-Ftp-Server -IncludeAllSubFeature -IncludeManagementTools -verbose

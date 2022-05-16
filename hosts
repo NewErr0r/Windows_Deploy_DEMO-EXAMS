@@ -1,0 +1,8 @@
+[Windows]
+Server_2019 ansible_host=192.168.0.110
+
+[Windows:vars]
+ansible_user = Administrator 
+ansible_port = 5986
+ansible_connection = winrm
+ansible_winrm_server_cert_validation = ignore

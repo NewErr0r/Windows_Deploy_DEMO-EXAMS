@@ -1,0 +1,310 @@
+---
+- name: 
+  hosts: Server_2019
+  gather_facts: no 
+  
+  tasks:
+    - name: Creating directory for site
+      ansible.windows.win_file:
+        path: C:\Temp\iis_site
+        state: directory
+
+    - name: Creating WebSite
+      community.windows.win_iis_website:
+        name: user01
+        port: 101
+        physical_path: C:\Temp\iis_site
+
+    - name: Creating WebSite
+      community.windows.win_iis_website:
+        name: user02
+        port: 102
+        physical_path: C:\Temp\iis_site
+
+    - name: Creating WebSite
+      community.windows.win_iis_website:
+        name: user03
+        port: 103
+        physical_path: C:\Temp\iis_site
+
+    - name: Creating WebSite
+      community.windows.win_iis_website:
+        name: user04
+        port: 104
+        physical_path: C:\Temp\iis_site
+
+    - name: Creating WebSite
+      community.windows.win_iis_website:
+        name: user05
+        port: 105
+        physical_path: C:\Temp\iis_site
+
+    - name: Creating WebSite
+      community.windows.win_iis_website:
+        name: user06
+        port: 106
+        physical_path: C:\Temp\iis_site
+
+    - name: Creating WebSite
+      community.windows.win_iis_website:
+        name: user07
+        port: 107
+        physical_path: C:\Temp\iis_site
+
+    - name: Creating WebSite
+      community.windows.win_iis_website:
+        name: user08
+        port: 108
+        physical_path: C:\Temp\iis_site
+
+    - name: Creating WebSite
+      community.windows.win_iis_website:
+        name: user09
+        port: 109
+        physical_path: C:\Temp\iis_site
+
+    - name: Creating WebSite
+      community.windows.win_iis_website:
+        name: user10
+        port: 110
+        physical_path: C:\Temp\iis_site
+
+    - name: Creating WebSite
+      community.windows.win_iis_website:
+        name: user11
+        port: 111
+        physical_path: C:\Temp\iis_site
+
+    - name: Creating WebSite
+      community.windows.win_iis_website:
+        name: user12
+        port: 112
+        physical_path: C:\Temp\iis_site
+
+    - name: Creating WebSite
+      community.windows.win_iis_website:
+        name: user13
+        port: 113
+        physical_path: C:\Temp\iis_site
+
+    - name: Creating WebSite
+      community.windows.win_iis_website:
+        name: user14
+        port: 114
+        physical_path: C:\Temp\iis_site
+
+    - name: Creating WebSite
+      community.windows.win_iis_website:
+        name: user15
+        port: 115
+        physical_path: C:\Temp\iis_site
+
+    - name: Creating WebSite
+      community.windows.win_iis_website:
+        name: user16
+        port: 116
+        physical_path: C:\Temp\iis_site
+
+    - name: Creating WebSite
+      community.windows.win_iis_website:
+        name: user17
+        port: 117
+        physical_path: C:\Temp\iis_site
+
+    - name: Creating WebSite
+      community.windows.win_iis_website:
+        name: user18
+        port: 118
+        physical_path: C:\Temp\iis_site
+
+    - name: Creating WebSite
+      community.windows.win_iis_website:
+        name: user19
+        port: 119
+        physical_path: C:\Temp\iis_site
+
+    - name: Creating WebSite
+      community.windows.win_iis_website:
+        name: user20
+        port: 120
+        physical_path: C:\Temp\iis_site
+
+    - name: Creating WebSite
+      community.windows.win_iis_website:
+        name: user21
+        port: 121
+        physical_path: C:\Temp\iis_site
+
+    - name: Creating WebSite
+      community.windows.win_iis_website:
+        name: user22
+        port: 122
+        physical_path: C:\Temp\iis_site
+
+    - name: Creating WebSite
+      community.windows.win_iis_website:
+        name: user23
+        port: 123
+        physical_path: C:\Temp\iis_site
+
+    - name: Creating WebSite
+      community.windows.win_iis_website:
+        name: user24
+        port: 124
+        physical_path: C:\Temp\iis_site
+
+    - name: Creating WebSite
+      community.windows.win_iis_website:
+        name: user25
+        port: 125
+        physical_path: C:\Temp\iis_site
+
+    - name: Creating WebSite
+      community.windows.win_iis_website:
+        name: user26
+        port: 126
+        physical_path: C:\Temp\iis_site
+
+    - name: Creating WebSite
+      community.windows.win_iis_website:
+        name: user27
+        port: 127
+        physical_path: C:\Temp\iis_site
+
+    - name: Creating WebSite
+      community.windows.win_iis_website:
+        name: user28
+        port: 128
+        physical_path: C:\Temp\iis_site
+
+    - name: Creating WebSite
+      community.windows.win_iis_website:
+        name: user29
+        port: 129
+        physical_path: C:\Temp\iis_site
+
+    - name: Creating WebSite
+      community.windows.win_iis_website:
+        name: user30
+        port: 130
+        physical_path: C:\Temp\iis_site
+
+    - name: Creating WebSite
+      community.windows.win_iis_website:
+        name: user31
+        port: 131
+        physical_path: C:\Temp\iis_site
+
+    - name: Creating WebSite
+      community.windows.win_iis_website:
+        name: user32
+        port: 132
+        physical_path: C:\Temp\iis_site
+
+    - name: Creating WebSite
+      community.windows.win_iis_website:
+        name: user33
+        port: 133
+        physical_path: C:\Temp\iis_site
+
+    - name: Creating WebSite
+      community.windows.win_iis_website:
+        name: user34
+        port: 134
+        physical_path: C:\Temp\iis_site
+
+    - name: Creating WebSite
+      community.windows.win_iis_website:
+        name: user35
+        port: 135
+        physical_path: C:\Temp\iis_site
+
+    - name: Creating WebSite
+      community.windows.win_iis_website:
+        name: user36
+        port: 136
+        physical_path: C:\Temp\iis_site
+
+    - name: Creating WebSite
+      community.windows.win_iis_website:
+        name: user37
+        port: 137
+        physical_path: C:\Temp\iis_site
+
+    - name: Creating WebSite
+      community.windows.win_iis_website:
+        name: user38
+        port: 138
+        physical_path: C:\Temp\iis_site
+
+    - name: Creating WebSite
+      community.windows.win_iis_website:
+        name: user39
+        port: 139
+        physical_path: C:\Temp\iis_site
+
+    - name: Creating WebSite
+      community.windows.win_iis_website:
+        name: user40
+        port: 140
+        physical_path: C:\Temp\iis_site
+
+    - name: Creating WebSite
+      community.windows.win_iis_website:
+        name: user41
+        port: 141
+        physical_path: C:\Temp\iis_site
+
+    - name: Creating WebSite
+      community.windows.win_iis_website:
+        name: user42
+        port: 142
+        physical_path: C:\Temp\iis_site
+
+    - name: Creating WebSite
+      community.windows.win_iis_website:
+        name: user43
+        port: 143
+        physical_path: C:\Temp\iis_site
+
+    - name: Creating WebSite
+      community.windows.win_iis_website:
+        name: user44
+        port: 144
+        physical_path: C:\Temp\iis_site
+
+    - name: Creating WebSite
+      community.windows.win_iis_website:
+        name: user45
+        port: 145
+        physical_path: C:\Temp\iis_site
+
+    - name: Creating WebSite
+      community.windows.win_iis_website:
+        name: user46
+        port: 146
+        physical_path: C:\Temp\iis_site
+
+    - name: Creating WebSite
+      community.windows.win_iis_website:
+        name: user47
+        port: 147
+        physical_path: C:\Temp\iis_site
+
+    - name: Creating WebSite
+      community.windows.win_iis_website:
+        name: user48
+        port: 148
+        physical_path: C:\Temp\iis_site
+
+    - name: Creating WebSite
+      community.windows.win_iis_website:
+        name: user49
+        port: 149
+        physical_path: C:\Temp\iis_site
+
+    - name: Creating WebSite
+      community.windows.win_iis_website:
+        name: user50
+        port: 150
+        physical_path: C:\Temp\iis_site
