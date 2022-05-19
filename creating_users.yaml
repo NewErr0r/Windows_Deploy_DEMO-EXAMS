@@ -5,103 +5,57 @@
 
   tasks: 
     - name: Create Users
-      win_command: NET USER user01 'user01' /ADD
-    - name: Create Users
-      win_command: NET USER user02 'user02' /ADD
-    - name: Create Users
-      win_command: NET USER user03 'user03' /ADD
-    - name: Create Users
-      win_command: NET USER user04 'user04' /ADD
-    - name: Create Users
-      win_command: NET USER user05 'user05' /ADD
-    - name: Create Users
-      win_command: NET USER user06 'user06' /ADD
-    - name: Create Users
-      win_command: NET USER user07 'user07' /ADD
-    - name: Create Users
-      win_command: NET USER user08 'user08' /ADD
-    - name: Create Users
-      win_command: NET USER user09 'user09' /ADD
-    - name: Create Users
-      win_command: NET USER user10 'user10' /ADD
-    - name: Create Users
-      win_command: NET USER user11 'user11' /ADD
-    - name: Create Users
-      win_command: NET USER user12 'user12' /ADD
-    - name: Create Users
-      win_command: NET USER user13 'user13' /ADD
-    - name: Create Users
-      win_command: NET USER user14 'user14' /ADD
-    - name: Create Users
-      win_command: NET USER user15 'user15' /ADD
-    - name: Create Users
-      win_command: NET USER user16 'user16' /ADD
-    - name: Create Users
-      win_command: NET USER user17 'user17' /ADD
-    - name: Create Users
-      win_command: NET USER user18 'user18' /ADD
-    - name: Create Users
-      win_command: NET USER user19 'user19' /ADD
-    - name: Create Users
-      win_command: NET USER user20 'user20' /ADD
-    - name: Create Users
-      win_command: NET USER user21 'user21' /ADD
-    - name: Create Users
-      win_command: NET USER user22 'user22' /ADD
-    - name: Create Users
-      win_command: NET USER user23 'user23' /ADD
-    - name: Create Users
-      win_command: NET USER user24 'user24' /ADD
-    - name: Create Users
-      win_command: NET USER user25 'user25' /ADD
-    - name: Create Users
-      win_command: NET USER user26 'user26' /ADD
-    - name: Create Users
-      win_command: NET USER user27 'user27' /ADD
-    - name: Create Users
-      win_command: NET USER user28 'user28' /ADD
-    - name: Create Users
-      win_command: NET USER user29 'user29' /ADD
-    - name: Create Users
-      win_command: NET USER user30 'user30' /ADD
-    - name: Create Users
-      win_command: NET USER user31 'user31' /ADD
-    - name: Create Users
-      win_command: NET USER user32 'user32' /ADD
-    - name: Create Users
-      win_command: NET USER user33 'user33' /ADD
-    - name: Create Users
-      win_command: NET USER user34 'user34' /ADD
-    - name: Create Users
-      win_command: NET USER user35 'user35' /ADD
-    - name: Create Users
-      win_command: NET USER user36 'user36' /ADD
-    - name: Create Users
-      win_command: NET USER user37 'user37' /ADD
-    - name: Create Users
-      win_command: NET USER user38 'user38' /ADD
-    - name: Create Users
-      win_command: NET USER user39 'user39' /ADD
-    - name: Create Users
-      win_command: NET USER user40 'user40' /ADD
-    - name: Create Users
-      win_command: NET USER user41 'user41' /ADD
-    - name: Create Users
-      win_command: NET USER user42 'user42' /ADD
-    - name: Create Users
-      win_command: NET USER user43 'user43' /ADD
-    - name: Create Users
-      win_command: NET USER user44 'user44' /ADD
-    - name: Create Users
-      win_command: NET USER user45 'user45' /ADD
-    - name: Create Users
-      win_command: NET USER user46 'user46' /ADD
-    - name: Create Users
-      win_command: NET USER user47 'user47' /ADD
-    - name: Create Users
-      win_command: NET USER user48 'user48' /ADD
-    - name: Create Users
-      win_command: NET USER user49 'user49' /ADD
-    - name: Create Users
-      win_command: NET USER user50 'user50' /ADD
-      
+      win_command: NET USER {{ item }} '{{ item }}' /ADD
+      loop: 
+        - user01
+        - user02
+        - user03
+        - user04
+        - user05
+        - user06
+        - user07
+        - user08
+        - user09
+        - user10
+        - user11
+        - user12
+        - user13
+        - user14
+        - user15
+        - user16
+        - user17
+        - user18
+        - user19
+        - user20
+        - user21
+        - user22
+        - user23
+        - user24
+        - user25
+        - user26
+        - user27
+        - user28
+        - user29
+        - user30
+        - user31
+        - user32
+        - user33
+        - user34
+        - user35
+        - user36
+        - user37
+        - user38
+        - user39
+        - user40
+        - user41
+        - user42
+        - user43
+        - user44
+        - user45
+        - user46
+        - user47
+        - user48
+        - user49
+        - user50
+
+          
