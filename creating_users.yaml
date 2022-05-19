@@ -11,5 +11,3 @@
     - name: Create Users
       win_command: NET USER user{{ item }} 'user{{ item }}' /ADD
       loop: "{{ range(10,51) | list }}"
-
-          
