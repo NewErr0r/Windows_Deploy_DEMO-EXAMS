@@ -11,58 +11,14 @@
 
     - name: Creating WebSite
       community.windows.win_iis_website:
-        name: "{{ item.name }}"
-        port: "{{ item.port }}"
+        name: user0{{ item }}
+        port: 10{{ item }}
         physical_path: C:\Temp\iis_site
-      loop:
-        - { name: 'site01', port: '101' }
-        - { name: 'site02', port: '102' }
-        - { name: 'site03', port: '103' }
-        - { name: 'site04', port: '104' }
-        - { name: 'site05', port: '105' }
-        - { name: 'site06', port: '106' }
-        - { name: 'site07', port: '107' }
-        - { name: 'site08', port: '108' }
-        - { name: 'site09', port: '109' }
-        - { name: 'site10', port: '110' }
-        - { name: 'site11', port: '111' }
-        - { name: 'site12', port: '112' }
-        - { name: 'site13', port: '113' }
-        - { name: 'site14', port: '114' }
-        - { name: 'site15', port: '115' }
-        - { name: 'site16', port: '116' }
-        - { name: 'site17', port: '117' }
-        - { name: 'site18', port: '118' }
-        - { name: 'site19', port: '119' }
-        - { name: 'site20', port: '120' }
-        - { name: 'site21', port: '121' }
-        - { name: 'site22', port: '122' }
-        - { name: 'site23', port: '123' }
-        - { name: 'site24', port: '124' }
-        - { name: 'site25', port: '125' }
-        - { name: 'site26', port: '126' }
-        - { name: 'site27', port: '127' }
-        - { name: 'site28', port: '128' }
-        - { name: 'site29', port: '129' }
-        - { name: 'site30', port: '130' }
-        - { name: 'site31', port: '131' }
-        - { name: 'site32', port: '132' }
-        - { name: 'site33', port: '133' }
-        - { name: 'site34', port: '134' }
-        - { name: 'site35', port: '135' }
-        - { name: 'site36', port: '136' }
-        - { name: 'site37', port: '137' }
-        - { name: 'site38', port: '138' }
-        - { name: 'site39', port: '139' }
-        - { name: 'site40', port: '140' }
-        - { name: 'site41', port: '141' }
-        - { name: 'site42', port: '142' }
-        - { name: 'site43', port: '143' }
-        - { name: 'site44', port: '144' }
-        - { name: 'site45', port: '145' }
-        - { name: 'site46', port: '146' }
-        - { name: 'site47', port: '147' }
-        - { name: 'site48', port: '148' }
-        - { name: 'site49', port: '149' }
-        - { name: 'site50', port: '150' }
-       
+      loop: "{{ range(1,10) | list }}"
+
+    - name: Creating WebSite
+      community.windows.win_iis_website:
+        name: user{{ item }}
+        port: 1{{ item }}
+        physical_path: C:\Temp\iis_site
+      loop: "{{ range(10,51) | list }}"      
